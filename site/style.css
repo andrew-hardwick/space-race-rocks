@@ -1,0 +1,121 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: 'Oxygen', sans-serif;
+  height: 100%;
+  width: 100%;
+  background: url("bg.png");
+  margin: 0;
+  color: ;
+}
+
+.header{
+  background-color: #0172DA;
+  flex: 0 1 auto;
+}
+
+.headerCenter{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.headerCenter img{
+  width: 100%;
+}
+
+.mainWrap{
+  flex: 1 0 auto;
+}
+
+.content{
+  margin: 0 auto;
+  width: 50em;
+}
+
+a{
+  color: #356dae;
+  text-decoration: none; 
+}
+
+a:visited{
+  color: #356dae;
+}
+
+a:hover{
+  color: #0172DA;
+}
+
+.button a{
+  float: left;
+  display: block;
+  width: 42%;
+  height: 4em;
+  color: #edfcff;
+  background: url('button.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: .5em 2% .5em 2%;
+  padding: 2%;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Paytone One', sans-serif;
+}
+
+
+.button a:hover{
+  background: url('button_hover.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.button a p{
+  padding: 0;
+  margin: .22em 0;
+}
+
+.footer{
+  background: #edfcff;
+  flex: 0 1 auto;
+}
+
+.footerContent{
+  margin: 2.5em auto 1em auto;
+  width: 50em;
+  text-align: center;
+}
+
+
+
+/* Responsive Stuff */
+@media screen and (max-width: 800px){
+  .button a{
+    width: 92%;
+  }
+  .content{
+    width: 100%;
+  }
+  .headerCenter{
+    width: 100%;
+  }
+  .footerContent{
+    width: 100%;
+  }
+}
+
+/* Responsive Stuff */
+@media screen and (max-width: 350px){
+  .button a{
+    width: 92%;
+    font-size: 1.5em;
+  }
+  .content{
+    width: 100%;
+  }
+  .headerCenter{
+    width: 100%;
+  }
+  .footerContent{
+    width: 100%;
+  }
+}
